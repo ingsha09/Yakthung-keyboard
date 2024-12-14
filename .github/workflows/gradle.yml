@@ -5,6 +5,8 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  release:
+    types: [created]  # Trigger on release creation
 
 jobs:
   build:
@@ -30,28 +32,24 @@ jobs:
 
     # Build the project
     - name: Build with Gradle Wrapper
-      run: ./gradlew build
+      run: ./gradlew assembleRelease  # Use assembleRelease to build the release APK
 
-    # Archive the APK file
-    - name: Archive APK
-      uses: actions/upload-artifact@v3
+    # Upload the APK to the release
+    - name: Create Release
+      id: create_release
+      uses: softprops/action-gh-release@v1
       with:
-        name: yakthung-keyboard-apk
-        path: app/build/outputs/apk/debug/*.apk  # Adjust the path if necessary
+        tag_name: ${{ github.ref }}  # Use the Git reference as the tag name
+        release_name: Release ${{ github.ref }}  # Name of the release
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}  # Use the secret here
 
-  dependency-submission:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
-    steps:
-    - uses: actions/checkout@v4
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
+    - name: Upload APK
+      uses: softprops/action-gh-release@v1
       with:
-        java-version: '17'
-        distribution: 'temurin'
-
-    # Generates and submits a dependency graph
-    - name: Generate and submit dependency graph
-      uses: gradle/actions/dependency-submission@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
+        tag_name: ${{ github.ref }}
+        files: app/build/outputs/apk/release/*.apk  # Adjust the path if necessary
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}  # Use the secret here
