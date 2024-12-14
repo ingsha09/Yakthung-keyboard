@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/drawable_key_background.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/drawable/key_background.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/xml_layout2.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/xml/layout2.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/layout_activity_main.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/xml_method.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/xml/method.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/layout_input_view.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/layout/input_view.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/xml_keyboard.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/xml/keyboard.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/xml_symbols.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/xml/symbols.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/layout_key_preview.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/layout/key_preview.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-merged_res-31:/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.yakthung.keyboard.app-main-33:/drawable-v24/ic_launcher_foreground.xml"
+    }
+]

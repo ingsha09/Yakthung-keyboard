@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "com.yakthung.keyboard.app-mergeReleaseResources-29:/layout/key_preview.xml",
+        "source": "com.yakthung.keyboard.app-main-31:/layout/key_preview.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-mergeReleaseResources-29:/layout/input_view.xml",
+        "source": "com.yakthung.keyboard.app-main-31:/layout/input_view.xml"
+    },
+    {
+        "merged": "com.yakthung.keyboard.app-mergeReleaseResources-29:/layout/activity_main.xml",
+        "source": "com.yakthung.keyboard.app-main-31:/layout/activity_main.xml"
+    }
+]

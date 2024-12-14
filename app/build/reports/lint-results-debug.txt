@@ -1,0 +1,161 @@
+/storage/emulated/0/Yakthung-keyboard/app/build.gradle.kts:12: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk = 33
+        ~~~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application runs on a version of Android that is more recent than
+   your targetSdkVersion specifies that it has been tested with, various
+   compatibility modes kick in. This ensures that your application continues
+   to work, but it may look out of place. For example, if the targetSdkVersion
+   is less than 14, your app may get an option button in the UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/java/com/yakthung/keyboard/YakthungKeyboardService.java:24: Warning: Avoid passing null as the view root (needed to resolve layout parameters on the inflated layout's root element) [InflateParams]
+        keyboardView = (KeyboardView) getLayoutInflater().inflate(R.layout.input_view, null);
+                                                                                       ~~~~
+
+   Explanation for issues of type "InflateParams":
+   When inflating a layout, avoid passing in null as the parent view, since
+   otherwise any layout parameters on the root of the inflated layout will be
+   ignored.
+
+   https://www.bignerdranch.com/blog/understanding-androids-layoutinflater-inflate/
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/AndroidManifest.xml:21: Warning: Redundant label can be removed [RedundantLabel]
+            android:label="@string/app_name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "RedundantLabel":
+   When an activity does not have a label attribute, it will use the one from
+   the application tag. Since the application has already specified the same
+   label, the label on this activity can be omitted.
+
+/storage/emulated/0/Yakthung-keyboard/app/build.gradle.kts:40: Warning: A newer version of com.google.android.material:material than 1.9.0 is available: 1.12.0 [GradleDependency]
+    implementation("com.google.android.material:material:1.9.0")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/storage/emulated/0/Yakthung-keyboard/app/build.gradle.kts:41: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0 [GradleDependency]
+    implementation("androidx.appcompat:appcompat:1.6.1")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/storage/emulated/0/Yakthung-keyboard/app/build.gradle.kts:42: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.0 [GradleDependency]
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/layout/activity_main.xml:41: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/layout/activity_main.xml:41: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/java/com/yakthung/keyboard/MainActivity.java:23: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        binding.textView.setText("Welcome to Yakthung Keyboard!");
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/layout/activity_main.xml:30: Warning: Hardcoded string "Enable Yakthung Keyboard", should use @string resource [HardcodedText]
+             android:text="Enable Yakthung Keyboard" />
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/layout/activity_main.xml:39: Warning: Hardcoded string "Set as Default Keyboard", should use @string resource [HardcodedText]
+             android:text="Set as Default Keyboard" />
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/storage/emulated/0/Yakthung-keyboard/app/src/main/res/layout/activity_main.xml:45: Warning: Hardcoded string "Type here to preview Yakthung Keyboard", should use @string resource [HardcodedText]
+             android:hint="Type here to preview Yakthung Keyboard"
+             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 14 warnings

@@ -1,0 +1,4 @@
+#Sat Dec 14 16:30:16 GMT 2024
+base.0=/storage/emulated/0/Yakthung-keyboard/app/build/intermediates/dex/release/minifyReleaseWithR8/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

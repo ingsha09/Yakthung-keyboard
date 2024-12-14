@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.0" type="incidents">
+
+    <incident
+        id="RedundantLabel"
+        severity="warning"
+        message="Redundant label can be removed">
+        <fix-attribute
+            description="Delete label"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="label"/>
+        <location
+            file="${:app*debug*sourceProvider*0*manifest*0}"
+            line="21"
+            column="13"
+            startOffset="696"
+            endLine="21"
+            endColumn="45"
+            endOffset="728"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Enable Yakthung Keyboard&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="30"
+            column="14"
+            startOffset="1042"
+            endLine="30"
+            endColumn="53"
+            endOffset="1081"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Set as Default Keyboard&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="39"
+            column="14"
+            startOffset="1428"
+            endLine="39"
+            endColumn="52"
+            endOffset="1466"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                dot="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="41"
+            column="10"
+            startOffset="1480"
+            endLine="41"
+            endColumn="18"
+            endOffset="1488"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            dot="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="41"
+            column="10"
+            startOffset="1480"
+            endLine="41"
+            endColumn="18"
+            endOffset="1488"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Type here to preview Yakthung Keyboard&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="45"
+            column="14"
+            startOffset="1666"
+            endLine="45"
+            endColumn="67"
+            endOffset="1719"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="5"
+            endColumn="17"
+            endOffset="272"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="${:app*debug*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"
+            startOffset="39"
+            endLine="5"
+            endColumn="17"
+            endOffset="272"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/yakthung/keyboard/MainActivity.java"
+            line="23"
+            column="34"
+            startOffset="770"
+            endLine="23"
+            endColumn="65"
+            endOffset="801"/>
+    </incident>
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 34"
+            oldString="33"
+            replacement="34"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="12"
+            column="9"
+            startOffset="214"
+            endLine="12"
+            endColumn="23"
+            endOffset="228"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.9.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.9.0"
+            replacement="1.12.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="40"
+            column="21"
+            startOffset="806"
+            endLine="40"
+            endColumn="63"
+            endOffset="848"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.0">
+        <fix-replace
+            description="Change to 1.7.0"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="41"
+            column="21"
+            startOffset="871"
+            endLine="41"
+            endColumn="55"
+            endOffset="905"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.0">
+        <fix-replace
+            description="Change to 2.2.0"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="42"
+            column="21"
+            startOffset="928"
+            endLine="42"
+            endColumn="69"
+            endOffset="976"/>
+    </incident>
+
+    <incident
+        id="InflateParams"
+        severity="warning"
+        message="Avoid passing `null` as the view root (needed to resolve layout parameters on the inflated layout&apos;s root element)">
+        <location
+            file="${:app*debug*sourceProvider*0*javaDir*0}/com/yakthung/keyboard/YakthungKeyboardService.java"
+            line="24"
+            column="88"
+            startOffset="901"
+            endLine="24"
+            endColumn="92"
+            endOffset="905"/>
+    </incident>
+
+</incidents>

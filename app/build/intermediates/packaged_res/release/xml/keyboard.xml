@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:keyHeight="45dp"
+    android:horizontalGap="0px"
+    android:verticalGap="3px">
+    
+    <!-- Row 1 -->
+    <Row>
+        <Key android:codes="6471" android:keyLabel="᥇" />
+        <Key android:codes="6472" android:keyLabel="᥈" />
+        <Key android:codes="6473" android:keyLabel="᥉" />
+        <Key android:codes="6474" android:keyLabel="᥊" />
+        <Key android:codes="6475" android:keyLabel="᥋" />
+        <Key android:codes="6476" android:keyLabel="᥌" />
+        <Key android:codes="6477" android:keyLabel="᥍" />
+        <Key android:codes="6478" android:keyLabel="᥎" />
+        <Key android:codes="6479" android:keyLabel="᥏" />
+        <Key android:codes="6470" android:keyLabel="᥆" />
+    </Row>
+    
+    <!-- Row 2 -->
+    <Row>
+        <Key android:codes="6442" android:keyLabel="ᤪ" />
+        <Key android:codes="6414" android:keyLabel="ᤎ" />
+        <Key android:codes="6419" android:keyLabel="ᤓ" />
+        <Key android:codes="6406" android:keyLabel="ᤆ" />
+        <Key android:codes="6411" android:keyLabel="ᤋ" />
+        <Key android:codes="6412" android:keyLabel="ᤌ" />
+        <Key android:codes="6403" android:keyLabel="ᤃ" />
+        <Key android:codes="6405" android:keyLabel="ᤅ" />
+        <Key android:codes="6421" android:keyLabel="ᤕ" />
+        <Key android:codes="6407" android:keyLabel="ᤇ" />
+    </Row>
+    
+    <!-- Row 3 -->
+    <Row>
+        <Key android:horizontalGap="4.999995%p" android:codes="6418" android:keyLabel="ᤒ" />
+        <Key android:codes="6401" android:keyLabel="ᤁ" />
+        <Key android:codes="6420" android:keyLabel="ᤔ" />
+        <Key android:codes="6432" android:keyLabel="ᤠ" />
+        <Key android:codes="6415" android:keyLabel="ᤏ" />
+        <Key android:codes="6408" android:keyLabel="ᤈ" />
+        <Key android:codes="6424" android:keyLabel="ᤘ" />
+        <Key android:codes="6416" android:keyLabel="ᤐ" />
+        <Key android:codes="6433" android:keyLabel="ᤡ" />
+    </Row>
+    
+    <!-- Row 4 -->
+    <Row>
+        <Key android:keyWidth="14.999998%p" android:codes="-1" android:keyLabel="⇧" /> <!-- Shift key -->
+        <Key android:codes="6425" android:keyLabel="ᤙ" />
+        <Key android:codes="6428" android:keyLabel="ᤜ" />
+        <Key android:codes="6400" android:keyLabel="ᤀ" />
+        <Key android:codes="6402" android:keyLabel="ᤂ" />
+        <Key android:codes="6413" android:keyLabel="ᤍ" />
+        <Key android:codes="6423" android:keyLabel="ᤗ" />
+        <Key android:codes="6417" android:keyLabel="ᤑ" />
+        <Key android:keyWidth="14.999998%p" android:codes="-5" android:keyLabel="⌫" isRepeatable="true"/> <!-- Backspace key -->
+    </Row>
+    
+    <!-- Row 5 -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:keyWidth="14.999998%p" android:codes="-2" android:keyLabel="🌐" /> <!-- Switch keyboard -->
+        <Key android:keyWidth="10%p" android:codes="-6" android:keyLabel="⚙️" /> <!-- Symbols or settings -->
+        <Key android:keyWidth="50%p" android:codes="32" android:keyLabel=" " /> <!-- Space key -->
+        <Key android:keyWidth="10%p" android:codes="46" android:keyLabel="." /> <!-- Period key -->
+        <Key android:keyWidth="14.999998%p" android:codes="-4" android:keyLabel="↵" /> <!-- Enter key -->
+    </Row>
+</Keyboard>

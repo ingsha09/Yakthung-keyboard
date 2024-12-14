@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.0.0" type="partial_results">
+    <map id="UnusedResources">
+        <entry
+            name="model"
+            string="drawable[ic_launcher_foreground(U),ic_launcher_background(U),ic_launcher_foreground_1(R),key_background(U)],id[editTextPreview(R),buttonEnableKeyboard(R),buttonSetDefaultKeyboard(R),keyboard_view(D),textView(R)],layout[key_preview(U),activity_main(U),input_view(U)],mipmap[ic_launcher_round(U),ic_launcher(U)],string[app_name(U)],style[Theme_Material3_DayNight_NoActionBar(R),AppTheme(U),Base_AppTheme(U)],xml[keyboard(U),method(U),layout2(U),symbols(U)];0^2,9^3,a^8^5^6,b^3^9,c^1^0,d^1^0,10^11,11^f,13^d^e;;;"/>
+    </map>
+
+</incidents>

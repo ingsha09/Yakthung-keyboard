@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                                
+
+    
+                                                                                 
+           
+
+    <RelativeLayout
+         android:layout_height="match_parent"
+         android:layout_width="match_parent"
+         android:padding="16dp" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_marginBottom="20dp"
+             android:textSize="18sp"
+             android:layout_centerHorizontal="true"
+             android:textColor="@android:color/white"
+             android:id="@+id/textView" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/textView"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+             android:id="@+id/buttonEnableKeyboard"
+             android:text="Enable Yakthung Keyboard" />
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:layout_below="@id/buttonEnableKeyboard"
+             android:layout_centerHorizontal="true"
+             android:layout_marginTop="10dp"
+             android:id="@+id/buttonSetDefaultKeyboard"
+             android:text="Set as Default Keyboard" />
+
+        <EditText
+             android:layout_height="wrap_content"
+             android:layout_width="match_parent"
+             android:layout_below="@id/buttonSetDefaultKeyboard"
+             android:hint="Type here to preview Yakthung Keyboard"
+             android:layout_marginTop="20dp"
+             android:id="@+id/editTextPreview" />
+
+    </RelativeLayout>
+
+         
