@@ -20,17 +20,24 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    # Add this step to give execute permissions to the gradlew file
+    # Grant execute permission for the gradlew file
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
 
-    # Configure Gradle for optimal use in GitHub Actions, including caching of downloaded dependencies.
-    # See: https://github.com/gradle/actions/blob/main/setup-gradle/README.md
+    # Configure Gradle
     - name: Setup Gradle
       uses: gradle/actions/setup-gradle@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
 
+    # Build the project
     - name: Build with Gradle Wrapper
       run: ./gradlew build
+
+    # Archive the APK file
+    - name: Archive APK
+      uses: actions/upload-artifact@v3
+      with:
+        name: yakthung-keyboard-apk
+        path: app/build/outputs/apk/debug/*.apk  # Adjust the path if necessary
 
   dependency-submission:
     runs-on: ubuntu-latest
@@ -45,7 +52,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
 
-    # Generates and submits a dependency graph, enabling Dependabot Alerts for all project dependencies.
-    # See: https://github.com/gradle/actions/blob/main/dependency-submission/README.md
+    # Generates and submits a dependency graph
     - name: Generate and submit dependency graph
       uses: gradle/actions/dependency-submission@af1da67850ed9a4cedd57bfd976089dd991e2582 # v4.0.0
