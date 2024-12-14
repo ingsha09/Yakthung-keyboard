@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:keyHeight="45dp"
+    android:horizontalGap="0px"
+    android:verticalGap="3px">
+    
+    <!-- Row 1 -->
+    <Row>
+        <Key android:codes="33" android:keyLabel="!" />
+        <Key android:codes="64" android:keyLabel="@" />
+        <Key android:codes="35" android:keyLabel="#" />
+        <Key android:codes="36" android:keyLabel="$" />
+        <Key android:codes="37" android:keyLabel="%" />
+        <Key android:codes="94" android:keyLabel="^" />
+        <Key android:codes="38" android:keyLabel="&amp;" />
+        <Key android:codes="42" android:keyLabel="*" />
+        <Key android:codes="40" android:keyLabel="(" />
+        <Key android:codes="41" android:keyLabel=")" />
+    </Row>
+    
+    <!-- Row 2 -->
+    <Row>
+        <Key android:codes="6440" android:keyLabel="ᤨ" />
+        <Key android:codes="6434" android:keyLabel="ᤢ" />
+        <Key android:codes="6435" android:keyLabel="ᤣ" />
+        <Key android:codes="6436" android:keyLabel="ᤤ" />
+        <Key android:codes="6437" android:keyLabel="ᤥ" />
+        <Key android:codes="6438" android:keyLabel="ᤦ" />
+        <Key android:codes="6459" android:keyLabel="᤻" />
+        <Key android:codes="6410" android:keyLabel="ᤊ" />
+        <Key android:codes="6450" android:keyLabel="ᤲ" />
+        <Key android:codes="6439" android:keyLabel="ᤧ" />
+    </Row>
+    
+    <!-- Row 3 -->
+    <Row>
+        <Key android:codes="42" android:keyLabel="*" />
+        <Key android:codes="61" android:keyLabel="=" />
+        <Key android:codes="36" android:keyLabel="$" />
+        <Key android:codes="37" android:keyLabel="%" />
+        <Key android:codes="38" android:keyLabel="&amp;" />
+        <Key android:codes="33" android:keyLabel="!" />
+        <Key android:codes="40" android:keyLabel="(" />
+        <Key android:codes="41" android:keyLabel=")" />
+        <Key android:codes="91" android:keyLabel="[" />
+        <Key android:codes="93" android:keyLabel="]" />
+    </Row>
+    
+    <!-- Row 4 -->
+    <Row>
+        <Key android:codes="43" android:keyLabel="+" />
+        <Key android:codes="63" android:keyLabel="?" />
+        <Key android:codes="45" android:keyLabel="-" />
+        <Key android:codes="58" android:keyLabel=":" />
+        <Key android:codes="92" android:keyLabel="\\" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="20%p" android:codes="-5" android:keyLabel="⌫" isRepeatable="true"/>
+    </Row>
+    
+    <!-- Row 5 -->
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:keyWidth="14.999998%p" android:codes="-2" android:keyLabel="🌐" />
+        <Key android:keyWidth="10%p" android:codes="35" android:keyLabel="#" />
+        <Key android:keyWidth="50%p" android:codes="32" android:keyLabel=" " />
+        <Key android:keyWidth="10%p" android:codes="64" android:keyLabel="@" />
+        <Key android:keyWidth="14.999998%p" android:codes="-4" android:keyLabel="↵" />
+    </Row>
+</Keyboard>
