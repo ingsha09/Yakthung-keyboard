@@ -40,7 +40,7 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         tag_name: ${{ github.ref }}  # Use the Git reference as the tag name
-        release_name: Release ${{ github.ref }}  # Name of the release
+        name: Release ${{ github.ref }}  # Corrected to use 'name'
         draft: false
         prerelease: false
       env:
